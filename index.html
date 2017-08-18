@@ -20,7 +20,7 @@
           <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="main-nav__user-list">
-          <li class="main-nav__user-item  main-nav__user-item--login">Вход</li>
+          <li class="main-nav__user-item  main-nav__user-item--login"><a class="main-nav__link" href="login.html">Вход</a></li>
         </ul>
       </nav>
     </header>
@@ -66,8 +66,8 @@
         <figure class="gallery__content">
           <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
         </figure>
-        <span class="gallery__btn  gallery__btn--back  btn">Назад</span>
-        <span class="gallery__btn  gallery__btn--next  btn">Вперед</span>
+        <button class="gallery__btn  gallery__btn--back  btn">Назад</button>
+        <button class="gallery__btn  gallery__btn--next  btn">Вперед</button>
       </section>
 
        <section class="contacts">
@@ -91,20 +91,20 @@
         <p class="appointment__info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
         <form class="appointment__form" action="https://echo.htmlacademy.ru" method="post">
           <p class="appointment__item">
-            Дата
-            <input type="text" name="date" value="" placeholder="08.10.2017">
+            <label for="appointment-date">Дата</label>
+            <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
           </p>
           <p class="appointment__item">
-            Время
-            <input type="text" name="time" value="" placeholder="10:00">
+            <label for="appointment-time">Время</label>
+            <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
           </p>
           <p class="appointment__item">
-            Ваше имя
-            <input type="text" name="name" value="" placeholder="Борода">
+            <label for="appointment-name">Ваше имя</label>
+            <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
           </p>
           <p class="appointment__item">
-            Телефон
-            <input type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+            <label for="appointment-phone">Телефон</label>
+            <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
           </p>
           <button class="appointment__btn btn" type="submit">Отправить</button>
         </form>
@@ -136,24 +136,32 @@
       <p>Введите свой логин и пароль.</p>
       <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <input class="modal-login__field  modal-login__field--user" type="text" name="login" placeholder="Логин">
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="modal-login__field  modal-login__field--user" id="user-login" type="text" name="login" placeholder="Логин">
         </p>
         <p>
-          <input class="modal-login__field  modal-login__field--password" type="password" name="password" placeholder="Пароль">
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="modal-login__field  modal-login__field--password" id="user-password" type="password" name="password" placeholder="Пароль">
         </p>
         <p class="modal-login__password-info">
-          <input type="checkbox" name="remember" class="visually-hidden">
-          Запомните меня
+          <label class="modal-login__checkbox">
+            <input class="visually-hidden" type="checkbox" name="remember">
+            <span class="modal-login__checkbox-indicator"></span>
+            Запомните меня
+          </label>
           <a class="modal-login__restore" href="#">Я забыл пароль!</a>
         </p>
         <button class="btn" type="submit">Войти</button>
       </form>
-      <span class="modal-login__close">x</span>
+      <button class="modal-login__close">Закрыть</button>
     </section>
 
     <section class="modal  modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <span class="modal-map__close">x</span>
+      <p>
+        <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button class="modal-map__close">Закрыть</button>
     </section>
   </body>
 </html>
