@@ -20,7 +20,7 @@
           <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="main-nav__user-list">
-          <li class="main-nav__user-item  main-nav__user-item--login">Вход</li>
+          <li class="main-nav__user-item  main-nav__user-item--login"><a class="main-nav__link" href="login.html">Вход</a></li>
         </ul>
       </nav>
     </header>
@@ -92,19 +92,24 @@
       <p>Введите свой логин и пароль.</p>
       <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <input class="modal-login__field  modal-login__field--user" type="text" name="login" placeholder="Логин">
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="modal-login__field  modal-login__field--user" id="user-login" type="text" name="login" placeholder="Логин">
         </p>
         <p>
-          <input class="modal-login__field  modal-login__field--password" type="password" name="password" placeholder="Пароль">
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="modal-login__field  modal-login__field--password" id="user-password" type="password" name="password" placeholder="Пароль">
         </p>
         <p class="modal-login__password-info">
-          <input type="checkbox" name="remember" class="visually-hidden">
-          Запомните меня
+          <label class="modal-login__checkbox">
+            <input class="visually-hidden" type="checkbox" name="remember">
+            <span class="modal-login__checkbox-indicator"></span>
+            Запомните меня
+          </label>
           <a class="modal-login__restore" href="#">Я забыл пароль!</a>
         </p>
         <button class="btn" type="submit">Войти</button>
       </form>
-      <span class="modal-login__close">x</span>
+      <button class="modal-login__close">Закрыть</button>
     </section>
 
     <section class="modal  modal-map">
