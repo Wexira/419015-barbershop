@@ -1,121 +1,185 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Каталог Барбершопа «Бородинский»</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="inner-page">
-    <header class="main-header">
-      <nav class="main-nav">
-        <a class="main-header__logo" href="index.html">
-          <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
-        </a>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="info.html">Информация</a></li>
-          <li class="main-nav__item"><a href="news.html">Новости</a></li>
-          <li class="main-nav__item"><a href="price.html">Прайс-лист</a></li>
-          <li class="main-nav__item  main-nav__item--active"><a href="catalog.html">Магазин</a></li>
-          <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="main-nav__user-list">
-          <li class="main-nav__user-item  main-nav__user-item--login"><a class="main-nav__link" href="login.html">Вход</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="container">
+<head>
+  <meta charset="UTF-8">
+  <title>Барбершоп «Бородинский»</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-      <h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
+<body class="inner-page">
 
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-        <li class="breadcrumbs__item"><a href="#">Магазин</a></li>
-        <li class="breadcrumbs__item"><a href="#">Средства для ухода</a></li>
-        <li class="breadcrumbs__item  breadcrumbs__item--current">Набор для путешествий «Baxter of California»</li>
+<header class="main-header">
+  <nav class="main-navigation container">
+    <a class="main-header-logo" href="index.html">
+      <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+    </a>
+    <ul class="site-navigation">
+      <li><a href="info.html">Информация</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="price.html">Прайс-лист</a></li>
+      <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+    <ul class="user-navigation">
+      <li><a class="login-link" href="login.html">Вход</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+
+  <h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
+
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="#">Магазин</a></li>
+    <li><a href="#">Средства для ухода</a></li>
+    <li class="breadcrumbs-current">Набор для путешествий «Baxter of California»</li>
+  </ul>
+
+  <div class="catalog-columns">
+
+    <section class="product-photos">
+      <h2 class="visually-hidden">Изображения товара</h2>
+      <p class="product-photo-full">
+        <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
+      </p>
+      <ul class="product-photo-preview">
+        <li>
+          <img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас">
+        </li>
+        <li>
+          <img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль">
+        </li>
+        <li>
+          <img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части">
+        </li>
       </ul>
+    </section>
 
-      <section class="product-photos">
-        <h2 class="visually-hidden">Изображения товара</h2>
-        <p class="product-photos__full">
-          <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
-        </p>
-        <ul class="product-photos__preview">
-          <li class="product-photos__preview-item"><img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас"></li>
-          <li class="product-photos__preview-item"><img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль"></li>
-          <li class="product-photos__preview-item"><img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части"></li>
-        </ul>
-      </section>
-
-      <section class="product-info">
-        <h2 class="visually-hidden">Описание товара</h2>
-        <p class="product-info__availability">Есть в наличии</p>
-        <p class="product-info__article">Артикул: dexter-ae</p>
-        <p class="product-info__text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-        <p class="product-info__price">
-          <b>2 900 ₽</b>
-          <a class="product-info__btn  btn" href="#">Купить</a>
-        </p>
-        <h3 class="product-info__compound-title">В набор входят:</h3>
-        <ul class="product-info__compound-list">
-          <li>Средство для умывания (50 мл)</li>
-          <li>Увлажняющий крем (50 мл)</li>
-          <li>Крем для бритья (50 мл)</li>
-          <li>Крем после бритья, шампунь (50 мл)</li>
-          <li>Удобная кожаная косметичка</li>
-        </ul>
-      </section>
-    </main>
-    <footer class="main-footer">
-      <p class="main-footer__contacts">
-        Барбершоп «Бородинский»<br>
-        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-        <a href="map.html">Как нас найти?</a><br>
-        Телефон: +7 (812) 666-02-66
-      </p>
-      <div class="main-footer__socials">
-        <b>Давайте дружить!</b>
-        <ul class="socials-list">
-          <li><a class="social-btn  social-btn--vk" href="#">Вконтакте</a></li>
-          <li><a class="social-btn  social-btn--fb" href="#">Фейсбук</a></li>
-          <li><a class="social-btn  social-btn--ig" href="#">Инстаграм</a></li>
-        </ul>
+    <section class="product-info">
+      <h2 class="visually-hidden">Описание товара</h2>
+      <div class="product-description">
+        <p class="product-availability">Есть в наличии</p>
+        <p class="product-article">Артикул: dexter-ae</p>
       </div>
-      <p class="main-footer__copyright">
-        <b>Разработано:</b>
-        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      <p class="product-text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+      <p class="product-price">
+        <b>2 900 ₽</b>
+        <a class="button" href="#">Купить</a>
       </p>
-    </footer>
-
-    <section class="modal  modal-login">
-      <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
-      <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="user-login">Логин</label>
-          <input class="modal-login__field  modal-login__field--user" id="user-login" type="text" name="login" placeholder="Логин">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-password">Пароль</label>
-          <input class="modal-login__field  modal-login__field--password" id="user-password" type="password" name="password" placeholder="Пароль">
-        </p>
-        <p class="modal-login__password-info">
-          <label class="modal-login__checkbox">
-            <input class="visually-hidden" type="checkbox" name="remember">
-            <span class="modal-login__checkbox-indicator"></span>
-            Запомните меня
-          </label>
-          <a class="modal-login__restore" href="#">Я забыл пароль!</a>
-        </p>
-        <button class="btn" type="submit">Войти</button>
-      </form>
-      <button class="modal-login__close">Закрыть</button>
+      <h3>В набор входят:</h3>
+      <ul>
+        <li>Средство для умывания (50 мл)</li>
+        <li>Увлажняющий крем (50 мл)</li>
+        <li>Крем для бритья (50 мл)</li>
+        <li>Крем после бритья, шампунь (50 мл)</li>
+        <li>Удобная кожаная косметичка</li>
+      </ul>
     </section>
+  </div>
 
-    <section class="modal  modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <span class="modal-map__close">x</span>
-    </section>
-  </body>
+</main>
+
+<footer class="main-footer">
+  <div class="container">
+    <p class="footer-contacts">
+    Барбершоп «Бородинский»<br>
+    Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+    <a href="map.html">Как нас найти?</a><br>
+    Телефон: +7 (812) 666-02-66
+  </p>
+  <div class="footer-social">
+    <b>Давайте дружить!</b>
+    <ul>
+      <li><a class="social-button" href="#">Вконтакте</a></li>
+      <li><a class="social-button" href="#">Фейсбук</a></li>
+      <li><a class="social-button" href="#">Инстаграм</a></li>
+    </ul>
+  </div>
+  <p class="footer-copyright">
+    <b>Разработано:</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+  </p>
+  </div>
+</footer>
+
+<section class="modal modal-login">
+  <h2>Личный кабинет</h2>
+  <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label class="visually-hidden" for="user-login">Логин</label>
+      <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+    </p>
+    <p>
+      <label class="visually-hidden" for="user-password">Пароль</label>
+      <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+    </p>
+    <p class="login-help">
+      <label class="login-checkbox">
+        <input type="checkbox" name="remember" class="visually-hidden">
+        <span class="checkbox-indicator"></span>
+        Запомните меня
+      </label>
+      <a class="restore" href="#">Я забыл пароль!</a>
+    </p>
+    <button class="button" type="submit">Войти</button>
+  </form>
+  <button class="modal-close" type="button">Закрыть</button>
+</section>
+
+<script>
+  var link = document.querySelector(".login-link");
+
+  var popup = document.querySelector(".modal-login");
+  var close = popup.querySelector(".modal-close");
+
+  var form = popup.querySelector("form");
+  var login = popup.querySelector("[name=login]");
+  var password = popup.querySelector("[name=password]");
+
+  var storage = localStorage.getItem("login");
+
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+
+    if (storage) {
+      login.value = storage;
+      password.focus();
+    } else {
+      login.focus();
+    }
+  });
+
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
+  });
+
+  form.addEventListener("submit", function (evt) {
+    if (!login.value || !password.value) {
+      evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
+    } else {
+      localStorage.setItem("login", login.value);
+    }
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+</script>
+
+</body>
 </html>
